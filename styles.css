@@ -1,0 +1,53 @@
+/* Make "Milly & Bebe!!" flash red and green */
+@keyframes flashingText {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: red; }
+}
+
+h1:last-of-type {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    animation: flashingText 1s infinite;
+}
+
+/* Add a festive background color */
+body {
+    background-color: #f0f8ff; /* Light blue for a wintery feel */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the main heading */
+h1:first-of-type {
+    font-size: 2.5em;
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+/* Style for the Christmas message */
+p {
+    font-size: 1.2em;
+    color: #008000; /* Dark green */
+    margin-bottom: 20px;
+}
+
+/* Add some holiday-themed flair */
+body::before {
+    content: "🎄🎅🎁✨";
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body::after {
+    content: "✨🎁🎅🎄";
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+}
