@@ -1,53 +1,61 @@
-/* Make "Milly & Bebe!!" flash red and green */
-@keyframes flashingText {
-    0% { color: red; }
-    50% { color: green; }
-    100% { color: red; }
-}
-
-h1:last-of-type {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    animation: flashingText 1s infinite;
-}
-
-/* Add a festive background color */
 body {
-    background-color: #f0f8ff; /* Light blue for a wintery feel */
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
 }
 
-/* Styling for the main heading */
-h1:first-of-type {
-    font-size: 2.5em;
-    color: darkred;
-    margin-bottom: 10px;
+.container {
+  text-align: center;
 }
 
-/* Style for the Christmas message */
-p {
-    font-size: 1.2em;
-    color: #008000; /* Dark green */
-    margin-bottom: 20px;
+.wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
 
-/* Add some holiday-themed flair */
-body::before {
-    content: "🎄🎅🎁✨";
-    display: block;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
+.wheel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-body::after {
-    content: "✨🎁🎅🎄";
-    display: block;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 10px;
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: red;
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  transform-origin: 100% 100%;
+}
+
+.segment1 { background: #ff0000; transform: rotate(0deg); }
+.segment2 { background: #00ff00; transform: rotate(72deg); }
+.segment3 { background: #0000ff; transform: rotate(144deg); }
+.segment4 { background: #ffff00; transform: rotate(216deg); }
+.segment5 { background: #ff00ff; transform: rotate(288deg); }
+
+.arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid black;
+  transform: translateX(-50%);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
