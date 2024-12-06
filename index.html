@@ -3,29 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secret Santa Picker</title>
+  <title>Secret Santa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🎄 Secret Santa Picker 🎅</h1>
-    <p>Click on your ornament to reveal who you’re buying a gift for!</p>
-  </header>
-
-  <main>
-    <div class="tree-container">
-      <img src="tree.png" alt="Christmas Tree" class="tree">
-      <div class="ornaments">
-        <!-- Ornaments will be dynamically created by script.js -->
-      </div>
+  <h1>Secret Santa</h1>
+  <div class="grid">
+    <div class="card" data-name="Steve">
+      <img src="images/Jim.jpg" alt="Jim">
+      <p class="name">Jim</p>
+      <p class="hidden">Steve</p>
     </div>
-    <div id="result" class="result hidden"></div>
-  </main>
-
-  <footer>
-    <p>Happy Holidays! 🎁</p>
-  </footer>
-
+    <div class="card" data-name="Felicity">
+      <img src="images/Margaret.jpg" alt="Margaret">
+      <p class="name">Margaret</p>
+      <p class="hidden">Felicity</p>
+    </div>
+    <div class="card" data-name="Cada">
+      <img src="images/Denis.jpg" alt="Denis">
+      <p class="name">Denis</p>
+      <p class="hidden">Catherine</p>
+    </div>
+    <div class="card" data-name="Alasdair">
+      <img src="images/Maddy.jpg" alt="Maddy">
+      <p class="name">Maddy</p>
+      <p class="hidden">Alasdair</p>
+    </div>
+    <div class="card" data-name="Jim">
+      <img src="images/Maders.jpg" alt="Maders">
+      <p class="name">Maders</p>
+      <p class="hidden">Jim</p>
+    </div>
+    <div class="card" data-name="Stephanie">
+      <img src="images/Erick.jpg" alt="Erick">
+      <p class="name">Erick</p>
+      <p class="hidden">Stephanie</p>
+    </div>
+    <div class="card" data-name="Margaret">
+      <img src="images/Cada.jpg" alt="Cada">
+      <p class="name">Cada</p>
+      <p class="hidden">Margaret</p>
+    </div>
+    <div class="card" data-name="Maders">
+      <img src="images/Steve.jpg" alt="Steve">
+      <p class="name">Steve</p>
+      <p class="hidden">Maders</p>
+    </div>
+    <div class="card" data-name="Denis">
+      <img src="images/Felicity.jpg" alt="Felicity">
+      <p class="name">Felicity</p>
+      <p class="hidden">Denis</p>
+    </div>
+    <div class="card" data-name="Erick">
+      <img src="images/Waleed.jpg" alt="Waleed">
+      <p class="name">Waleed</p>
+      <p class="hidden">Erick</p>
+    </div>
+    <div class="card" data-name="Waleed">
+      <img src="images/Steph.jpg" alt="Steph">
+      <p class="name">Steph</p>
+      <p class="hidden">Waleed</p>
+    </div>
+    <div class="card" data-name="Maddy">
+      <img src="images/Alasdair.jpg" alt="Alasdair">
+      <p class="name">Alasdair</p>
+      <p class="hidden">Maddy</p>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
