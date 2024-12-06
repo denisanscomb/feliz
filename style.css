@@ -4,13 +4,18 @@ body {
     margin-top: 50px;
 }
 
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 img {
-    max-width: 80%; /* Ensures the image fits within the viewport */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 80%; /* Ensure image fits within viewport */
+    height: auto; /* Maintain aspect ratio */
     cursor: pointer;
     transition: transform 0.3s ease; /* Smooth rotation effect */
 }
 
 img:hover {
-    transform: scale(1.1); /* Slight zoom on hover for better user feedback */
+    transform: scale(1.1); /* Slight zoom on hover */
 }
