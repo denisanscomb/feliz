@@ -5,12 +5,12 @@ body {
 }
 
 img {
-    width: 300px;
-    height: auto;
+    max-width: 80%; /* Ensures the image fits within the viewport */
+    height: auto; /* Maintains aspect ratio */
     cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth rotation */
+    transition: transform 0.3s ease; /* Smooth rotation effect */
 }
 
 img:hover {
-    transform: scale(1.1); /* Slight zoom on hover for a visual cue */
+    transform: scale(1.1); /* Slight zoom on hover for better user feedback */
 }
