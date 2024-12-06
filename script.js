@@ -38,8 +38,13 @@ Object.keys(secretSantaMapping).forEach((name, index) => {
   ornament.classList.add("ornament");
   ornament.style.left = ornamentPositions[index].left;
   ornament.style.top = ornamentPositions[index].top;
-  ornament.textContent = name[0]; // Display first letter of the name
-  ornament.dataset.name = name;
+
+  // Add image for the participant
+  const img = document.createElement("img");
+  img.src = `${name}.jpg`; // Assumes images are named after participants (e.g., Jim.jpg)
+  img.alt = name;
+  img.title = name;
+  img.classList.add("ornament-img");
 
   // Add click event to reveal the Secret Santa match
   ornament.addEventListener("click", () => {
@@ -48,5 +53,6 @@ Object.keys(secretSantaMapping).forEach((name, index) => {
     resultDiv.classList.remove("hidden");
   });
 
+  ornament.appendChild(img);
   ornamentsContainer.appendChild(ornament);
 });
