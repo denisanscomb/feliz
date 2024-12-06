@@ -1,12 +1,13 @@
-// JavaScript to toggle between images when clicked
+// Select the image element
 const image = document.getElementById('image');
 
-// Define the images to toggle
+// Define the images for toggling
 const images = ['Denis.jpg', 'Jim.jpg'];
 let currentIndex = 0;
 
+// Event listener for image click
 image.addEventListener('click', () => {
-    // Toggle the image
+    // Switch to the next image in the array
     currentIndex = (currentIndex + 1) % images.length;
     image.src = images[currentIndex];
 });
