@@ -2,7 +2,7 @@
 const image = document.getElementById('image');
 
 // Define the images to toggle
-const images = ['Denis.png', 'Jim.jpeg'];
+const images = ['Denis.jpg', 'Jim.jpg'];
 let currentIndex = 0;
 
 image.addEventListener('click', () => {
