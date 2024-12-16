@@ -1,14 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Rotator with Dynamic Text</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Nativity Play</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1576765607926-c8f46e1d5378?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #c21807;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+      border-bottom: 2px solid #c21807;
+      padding-bottom: 0.3rem;
+    }
+
+    .section {
+      margin: 1.5rem 0;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .song {
+      font-style: italic;
+      margin: 1rem 0;
+    }
+
+    .song-lyrics {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #c21807;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <h1 id="heading">Denis buys for</h1>
-    <img id="image" src="Denis.jpg" alt="Picture of Denis">
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>The Nativity Play</h1>
+
+    <!-- Cast Section -->
+    <div class="section">
+      <h2>Cast</h2>
+      <ul>
+        <li><span class="highlight">NARRATOR 1/WISE MAN 1</span> - BEBE</li>
+        <li><span class="highlight">NARRATOR 2/WISE MAN 2</span> - MADELEINE</li>
+        <li><span class="highlight">MARY</span> - ELSA</li>
+        <li><span class="highlight">JOSEPH</span> - NANDO</li>
+        <li><span class="highlight">ANGEL GABRIEL</span> - RAFA</li>
+        <li><span class="highlight">LITTLE ANGELS</span> - JULIET, NAOMI, FAFA</li>
+        <li><span class="highlight">KING HARROD</span> - SEB</li>
+        <li><span class="highlight">INNKEEPER/SHEPHERD</span> - MILLY</li>
+        <li><span class="highlight">DONKEY</span> - FELIX</li>
+        <li><span class="highlight">COW</span> - LUKE</li>
+        <li><span class="highlight">PIG</span> - NASSER</li>
+        <li><span class="highlight">BABY JESUS</span> - RAFEEQ</li>
+      </ul>
+    </div>
+
+    <!-- Scenes Section -->
+    <div class="section">
+      <h2>Scenes</h2>
+
+      <!-- Scene 1 -->
+      <h3>Scene 1</h3>
+      <p><strong>NARRATOR 1:</strong> This is a story of family.</p>
+      <p><strong>NARRATOR 2:</strong> This is a story of foe.</p>
+      <p><strong>NARRATOR 1:</strong> This is a story of happiness.</p>
+      <p><strong>NARRATOR 2:</strong> This is a story of low.</p>
+      <p>ALL start singing <span class="highlight">‘Oh Come, Oh Come Emmanuel’</span>.</p>
+
+      <div class="song-lyrics">
+        <p>Oh come, oh come, Emmanuel,<br>
+        And with your people always dwell.<br>
+        Who mourn in mortal exile here,<br>
+        Until the Lord of life appear.<br>
+        Rejoice! Rejoice! Emmanuel<br>
+        Shall come again and with us ever dwell.</p>
+      </div>
+
+      <p><strong>NARRATOR 1:</strong> Welcome to the first Anscomb Christmas Nativity!</p>
+      <p><strong>NARRATOR 2:</strong> Where Rafeeq will be making his debut.</p>
+    </div>
+
+    <!-- Scene 2 -->
+    <div class="section">
+      <h3>Scene 2</h3>
+      <p><strong>NARRATOR 1:</strong> The story starts with Mary.</p>
+      <p><strong>MARY:</strong> I am pregnant! Not just with a baby but with the Son of God!</p>
+    </div>
+
+    <!-- Song Example -->
+    <div class="section">
+      <h3>Final Song: Silent Night</h3>
+      <div class="song-lyrics">
+        <p>Silent night, holy night,<br>
+        All is calm, all is bright.<br>
+        Round yon virgin mother and child,<br>
+        Holy infant so tender and mild,<br>
+        Sleep in heavenly peace,<br>
+        Sleep in heavenly peace.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2024 - The Anscomb Christmas Nativity
+  </footer>
 </body>
 </html>
