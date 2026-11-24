@@ -1,21 +1,66 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f2f7ff; /* Light snow-like background */
+  margin: 0;
+  padding: 0;
+  background-image: url('snowflakes.png'); /* Add a subtle snowflake background */
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  color: #d32f2f; /* Festive red color */
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #fff, 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Table container and layout */
+.table-container {
+  margin: 20px auto;
+  display: inline-block;
+  border: 8px solid #8bc34a; /* Green border to represent garlands */
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff; /* Contrast with the snowflakes background */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Styling for participant images */
 img {
-    max-width: 80%; /* Ensure image fits within viewport */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth rotation effect */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 4px solid #ffc107; /* Gold border for a festive feel */
+  border-radius: 50%; /* Circle shape for ornaments effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
+  border-color: #d32f2f; /* Hover with festive red border */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a footer for some Christmas cheer */
+footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #8bc34a; /* Green background */
+  color: white;
+  font-size: 1.2rem;
+  border-top: 4px solid #d32f2f; /* Red line for extra decoration */
+  text-shadow: 1px 1px #000;
 }

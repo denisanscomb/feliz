@@ -1,19 +1,27 @@
-// Select the image and heading elements
-const image = document.getElementById('image');
-const heading = document.getElementById('heading');
+// Define the relationships between people and their Secret Santa recipients
+const secretSantaMap = {
+  Jim: "Steve",
+  Margaret: "Felicity",
+  Denis: "Cada",
+  Maddy: "Alasdair",
+  Maders: "Jim",
+  Erick: "Steph",
+  Cada: "Margaret",
+  Steve: "Maders",
+  Felicity: "Denis",
+  Waleed: "Erick",
+  Steph: "Waleed",
+  Alasdair: "Maddy"
+};
 
-// Define images and corresponding texts
-const images = [
-    { src: 'Denis.jpg', text: 'Denis buys for' },
-    { src: 'Jim.jpg', text: 'Jim' }
-];
-
-let currentIndex = 0;
-
-// Event listener for image click
-image.addEventListener('click', () => {
-    // Switch to the next image and text
-    currentIndex = (currentIndex + 1) % images.length;
-    image.src = images[currentIndex].src;
-    heading.textContent = images[currentIndex].text;
+// Add event listeners to each image
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("click", () => {
+    const buyerName = img.id;
+    const recipientName = secretSantaMap[buyerName];
+    if (recipientName) {
+      img.src = `${recipientName}.jpg`; // Update the image source to the recipient's picture
+      img.alt = recipientName; // Update the alt text
+    }
+  });
 });

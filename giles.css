@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1607602791409-1d9f3dd68b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200') no-repeat center center fixed; /* Snowy background */
+  background-size: cover;
+  color: #333;
+}
+
+/* Page Container */
+.page-container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #c21807; /* Festive red */
+  color: #fff; /* White text */
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.holiday-icon {
+  font-size: 1.5rem;
+}
+
+/* Drawing Container */
+.drawing-container {
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.google-drawing {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #ccc;
+}
+
+.caption {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+/* Snowflake Animation */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Snow_flake_icon.svg/1200px-Snow_flake_icon.svg.png') repeat;
+  background-size: 50px 50px;
+  animation: snow 10s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes snow {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
