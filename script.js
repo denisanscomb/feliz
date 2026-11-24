@@ -1,17 +1,17 @@
 // Define the relationships between people and their Secret Santa recipients
 const secretSantaMap = {
-  Jim: "Steve",
-  Margaret: "Felicity",
-  Denis: "Cada",
-  Maddy: "Alasdair",
-  Maders: "Jim",
-  Erick: "Steph",
-  Cada: "Margaret",
-  Steve: "Maders",
+  Jim: "Felicity",
   Felicity: "Denis",
-  Waleed: "Erick",
-  Steph: "Waleed",
-  Alasdair: "Maddy"
+  Denis: "Margaret",
+  Margaret: "Alasdair",
+  Alasdair: "Steve",
+  Steve: "Waleed",
+  Waleed: "Steph",
+  Steph: "Cada",
+  Cada: "Erick",
+  Erick: "Maddy",
+  Maddy: "Maders",
+  Maders: "Jim"
 };
 
 // Add event listeners to each image
